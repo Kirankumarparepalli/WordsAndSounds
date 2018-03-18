@@ -1,0 +1,32 @@
+
+  <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Peppa Pig</mat-card-title>
+        <mat-card-subtitle>My favourite</mat-card-subtitle>
+      </mat-card-header>
+        <img mat-card-image src="assets/img/peppa1.jpeg" alt="Photo of a peppa pig">
+      <mat-card-content>
+        <h1>
+          {{title}}
+        </h1>
+      </mat-card-content>
+      <mat-card-actions >
+        <button mat-raised-button (click)="clearResults()">
+          <i class="material-icons md-36">keyboard_arrow_left</i>Back
+        </button>
+
+        <button mat-raised-button color="primary" (click)="populateResults()">Next
+          <i class="material-icons md-36">keyboard_arrow_right</i>
+        </button>
+      </mat-card-actions>
+ </mat-card>
+
+<!--    <div class="form-group">
+      <div class="button-row">
+        <button mat-raised-button color="primary" id="populateResults" (click)="populateResults()">Next</button>
+        <button mat-raised-button id="clearResults" (click)="clearResults()">Back</button>
+      </div>
+    </div>-->
+
+
